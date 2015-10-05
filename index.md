@@ -1,1 +1,0 @@
-# friendsdog.com.br (test)
