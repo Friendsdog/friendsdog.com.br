@@ -2,6 +2,13 @@
 // Resets
 //
 
+html {
+  color: $text-color-primary;
+  font-family: $preferred_font;
+  font-weight: 300;
+  font-size: 100%/1.5;
+}
+
 img {
   height: auto;
   max-width: 100%;

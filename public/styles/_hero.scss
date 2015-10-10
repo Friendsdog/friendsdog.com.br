@@ -41,7 +41,7 @@
 @include grid-media-query(palm) {
   .hero {
     @include bem-element(image) {
-      background-image: url("#{$image_path}/logo@320.png");
+      background-image: url("#{$image_path}/logo@480.png");
     }
   }
 }

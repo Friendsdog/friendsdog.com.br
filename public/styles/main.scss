@@ -4,11 +4,10 @@
 // Basic resets and 3td party files
 @import "mixins";
 @import "variables";
-@import "../../node_modules/material-design-lite/src/variables";
-@import "../../bower_components/csswizardry-grids/csswizardry-grids";
 @import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/material-design-lite/src/variables";
 @import "../../node_modules/material-design-lite/src/resets/resets";
-// @import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../bower_components/csswizardry-grids/csswizardry-grids";
 @import "reset";
 
 //
