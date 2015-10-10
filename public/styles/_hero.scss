@@ -5,31 +5,35 @@
  */
 
 body {
-  @include gradient-vertical-three-colors(#f44336, #fff, 50%, #fff);
+  @include gradient-vertical-three-colors(#f44336, #fff, 70%, #fff);
+  padding-top: 5vh;
 }
 
 .hero {
-  height: 50vh;
-  margin: 0px auto;
   text-align: center;
-  width: 60vw;
+  padding: 0px;
 }
 
-@media only screen and (max-width: 480px) {
+// desktop
+@media (min-width: $grid-tablet-breakpoint) {
+  body {
+    padding-top: 15vh;
+  }
+
   .hero {
-    height: auto;
-    width: 100%;
-
-    & >figure {
-      padding-left: 4vh;
-      padding-right: 4vh;
-    }
+    width: 960px;
   }
 }
 
-#map {
-  &> iframe {
-    height: auto;
-    width: 100%;
-  }
+// phones
+@media (max-width: $grid-tablet-breakpoint - 1) {
+  // .hero {
+  //   height: auto;
+  //   max-width: 100%;
+  //
+  //   & >figure {
+  //     margin-left: 4vh;
+  //     margin-right: 4vh;
+  //   }
+  // }
 }
