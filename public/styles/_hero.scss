@@ -1,0 +1,35 @@
+/**
+ * friendsdog.com.br
+ *
+ * @see http://codeguide.co/#css
+ */
+
+body {
+  @include gradient-vertical-three-colors(#f44336, #fff, 50%, #fff);
+}
+
+.hero {
+  height: 50vh;
+  margin: 0px auto;
+  text-align: center;
+  width: 60vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    height: auto;
+    width: 100%;
+
+    & >figure {
+      padding-left: 4vh;
+      padding-right: 4vh;
+    }
+  }
+}
+
+#map {
+  &> iframe {
+    height: auto;
+    width: 100%;
+  }
+}

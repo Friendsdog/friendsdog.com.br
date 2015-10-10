@@ -1,0 +1,25 @@
+/**
+ * friendsdog.com.br
+ *
+ * @see http://codeguide.co/#css
+ */
+
+.icon {
+  height: 24px;
+  width: 24px;
+
+  @include bem-modifier(10vh) {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  @each $social, $color in $social-colors  {
+    @include bem-modifier($social) {
+      background-color: $color;
+      border-radius: 2vh;
+      fill: #fff;
+      margin-bottom: 2vh;
+      margin: 1vh;
+    }
+  }
+}

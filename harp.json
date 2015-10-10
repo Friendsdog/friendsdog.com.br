@@ -1,0 +1,10 @@
+{
+  "globals": {
+    "description": "O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar.",
+    "lang": "pt-br",
+    "site_name": "Friends Dog",
+    "site_url": "http://friendsdog.com.br",
+    "inlinecss": true,
+    "version": "1.0.0"
+  }
+}

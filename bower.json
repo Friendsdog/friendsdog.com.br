@@ -1,0 +1,8 @@
+{
+  "name": "friendsdog.com.br",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "csswizardry-grids": "~2.2.0"
+  }
+}

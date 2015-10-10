@@ -1,0 +1,17 @@
+/**
+ * friendsdog.com.br
+ *
+ * @see http://codeguide.co/#css
+ */
+
+@import "mixins";
+@import "variables";
+@import "../../node_modules/material-design-lite/src/resets/resets";
+@import "../../node_modules/material-design-lite/src/material-design-lite-grid";
+@import "reset";
+@import "typography";
+@import "hero";
+@import "icons";
+@import "map";
+
+// @media only screen and (max-width: 480px) {

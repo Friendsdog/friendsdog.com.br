@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "FastFoodRestaurant",
+  "logo": "http://friendsdog.com.br/img/12011201_1049068941800538_854727983962261424_n.jpg",
+  "description": "O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar.",
+  "url" : "http://friendsdog.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brasilia, Brasil",
+    "addressRegion": "DF",
+    "streetAddress": "Blvd. Sul - Águas Claras"
+  },
+    "location" : {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-15.839383",
+      "longitude": "-48.022472"
+    }
+  },
+  "priceRange": "$",
+  "email": "friendsdog(at)gmx.com",
+  "name": "Friends Dog",
+  "telephone": "61 9191 1212",
+  "openingHours": [
+    "Su-Sa 18:00-00:30"
+  ]
+}

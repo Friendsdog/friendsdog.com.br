@@ -1,0 +1,15 @@
+doctype html
+html(lang="#{lang}")
+  head
+    != partial("/_includes/_head-inc")
+
+  body
+    != partial("/_includes/_header")
+
+    main
+      != yield
+
+    != partial("/_includes/_footer")
+
+    //- custom javascripts (and social snippets)
+    != partial("/_includes/_javascript")

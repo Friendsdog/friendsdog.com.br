@@ -1,0 +1,72 @@
+meta(charset="utf-8")
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(name="referrer" content="origin")
+meta(name="viewport" content="width=device-width, initial-scale=1")
+link(rel="manifest" href="manifest.json")
+
+//- Prefetch DNS for external assets (fonts, twitter, fb, google, ads, etc)
+//- link(rel="dns-prefetch" href="")
+link(rel="dns-prefetch" href="//apis.google.com")
+link(rel="dns-prefetch" href="//fonts.googleapis.com")
+link(rel="dns-prefetch" href="//www.google-analytics.com")
+
+//- Prerender current page
+if "index" == current.path[0]
+  link(rel="prerender" href="#{site_url}")
+else
+  link(rel="prerender" href="#{site_url}/#{current.path[0]}")
+
+if "index" == current.path[0]
+  title #{site_name}
+else
+  title #{title || current.path[0]} &middot; #{site_name}
+
+meta(name="description" content="#{description}")
+meta(name="robots" content="all")
+
+meta(property="og:lang" content="#{lang}")
+meta(property="og:title" content="#{title}")
+meta(property="og:description" content="#{description}")
+meta(property="og:image" content="images/logos/default@320.png")
+meta(property="og:image:type" content="image/png")
+meta(property="og:image:width" content="320")
+meta(property="og:image:height" content="60")
+
+//- Disable tap highlight on IE
+meta(name="msapplication-tap-highlight" content="no")
+
+//- Web Application Manifest
+link(rel="manifest" href="manifest.json")
+
+//- Add to homescreen for Chrome on Android
+meta(name="mobile-web-app-capable" content="yes")
+meta(name="application-name" content="#{site_name}")
+link(rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png")
+
+//- Add to homescreen for Safari on iOS
+meta(name="apple-mobile-web-app-title" content="#{site_name}")
+meta(name="apple-mobile-web-app-capable" content="yes")
+meta(name="apple-mobile-web-app-status-bar-style" content="black")
+meta(name="apple-mobile-web-app-title" content="#{site_name}")
+link(rel="apple-touch-icon" sizes="152x152" href="images/touch/apple-touch-icon-152x152.png")
+
+//- Tile icon for Win8 (144x144 + tile color)
+meta(name="msapplication-TileImage" content="images/touch/mstile-144x144.png")
+meta(name="msapplication-TileColor" content="#f44336")
+meta(name="theme-color" content="#f44336")
+
+link(rel="icon" type="image/png" href="images/touch/favicon-32x32.png" sizes="32x32")
+link(rel="icon" type="image/png" href="images/touch/favicon-96x96.png" sizes="96x96")
+link(rel="icon" type="image/png" href="images/touch/favicon-16x16.png" sizes="16x16")
+
+//- SEO: If your mobile URL is different from the desktop URL, add a canonical 
+//- link to the desktop page 
+//- https://developers.google.com/webmasters/smartphone-sites/feature-phones
+//- link(rel="canonical" href="#{site_url}")
+
+//- change this in harp.json
+if inlinecss
+  style
+    include ../../dist/styles/main.css
+else
+  link(rel="stylesheet" href="styles/main.css")

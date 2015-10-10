@@ -1,0 +1,61 @@
+/**
+ * friendsdog.com.br
+ *
+ * @see http://codeguide.co/#css
+ */
+
+/**
+ * Material design color palettes.
+ * @see http://www.google.com/design/spec/style/color.html
+ */
+@import "../../node_modules/material-design-lite/src/color-definitions";
+
+/* ==========  IMAGES  ========== */
+$image_path: '../images';
+
+
+/* ==========  COLORS  ========== */
+
+$color-primary: $palette-red-500;
+$color-primary-dark: $palette-red-A700;
+$color-accent: $palette-blue-A200;
+
+// Define whether individual color pallet items should have classes created.
+// !!! Do NOT set this to `false` !!!
+$trim-color-classes: true;
+
+// $text-link-color: unquote("rgb(#{$color-primary})") !default;
+
+
+/* ==========  TYPOGRAPHY  ========== */
+
+$preferred_font: 'Open Sans', sans-serif;
+$performance_font: $preferred_font;
+
+
+/* ==========  GRIDS  ========== */
+// $grid-desktop-columns: 9 !default;
+
+// https://github.com/google/material-design-lite/blob/master/src/_variables.scss
+@import "../../node_modules/material-design-lite/src/variables";
+
+
+// Mother of god, Google!
+$color-primary: unquote("rgb(#{$color-primary})");
+
+//
+$social-colors: (
+  facebook:   #3b5997,
+  friendsdog: #f44336,
+  github:     #3a3838,
+  google:     #d64937,
+  instagram:  #ddc4ae,
+  linkedin:   #0073b2,
+  pinterest:  #cb2027,
+  reddit:     #ff5700,
+  tumblr:     #35465c,
+  twitter:    #41b7d8,
+  vk:         #5e82a8,
+  whats-app:  #28b43f,
+  xing:       #175e60
+);
