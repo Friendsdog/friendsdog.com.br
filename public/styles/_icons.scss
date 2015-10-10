@@ -5,21 +5,21 @@
  */
 
 .icon {
-  height: 24px;
-  width: 24px;
-
-  @include bem-modifier(10vh) {
-    width: 10vh;
-    height: 10vh;
-  }
+  height: 10vmin;
+  width: 10vmin;
+  margin: 1vh;
+  margin-bottom: 2vh;
+  border-radius: 2vmin;
 
   @each $social, $color in $social-colors  {
     @include bem-modifier($social) {
       background-color: $color;
-      border-radius: 2vh;
       fill: #fff;
-      margin-bottom: 2vh;
-      margin: 1vh;
+
+      @include bem-modifier(inverse) {
+        background-color: transparent;
+        fill: $color;
+      }
     }
   }
 }

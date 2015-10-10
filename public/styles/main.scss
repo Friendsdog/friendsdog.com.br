@@ -1,17 +1,17 @@
-/**
- * friendsdog.com.br
- *
- * @see http://codeguide.co/#css
- */
+/*! http://friendsdog.com.br v1.0.0 */
 
+//
+// Basic resets and 3td party files
 @import "mixins";
 @import "variables";
-@import "../../node_modules/material-design-lite/src/resets/h5bp";
-@import "../../node_modules/material-design-lite/src/material-design-lite-grid";
+@import "../../bower_components/csswizardry-grids/csswizardry-grids";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/material-design-lite/src/resets/resets";
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "reset";
-@import "typography";
-@import "hero";
-@import "icons";
-@import "map";
 
-// @media only screen and (max-width: 480px) {
+//
+// Our styles
+@import "utilities";
+@import "icons";
+@import "hero";

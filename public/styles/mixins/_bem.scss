@@ -1,10 +1,8 @@
-/**
- * friendsdog.com.br
- *
- * @see http://codeguide.co/#css
- */
+//
+// BEM elements and modifiers
+//
 
-/* Create BEM elements (https://en.bem.info/method/definitions/#element) */
+// Create BEM elements (https://en.bem.info/method/definitions/#element)
 @mixin bem-element($elements...) {
   $selector: ();
 
@@ -17,7 +15,7 @@
   }
 }
 
-/* Create BEM modifiers (https://en.bem.info/method/definitions/#modifiers) */
+// Create BEM modifiers (https://en.bem.info/method/definitions/#modifiers)
 @mixin bem-modifier($modifiers...) {
   $selector: ();
 

@@ -5,5 +5,8 @@
  */
 
 @import "mixins/bem";
-@import "mixins/gradients";
-@import "mixins/sr-only";
+
+// Create BEM modifiers (https://en.bem.info/method/definitions/#modifiers)
+@function mdl-color($color, $opacity: 1) {
+  @return unquote("rgba(#{$color}, #{$opacity})");
+}

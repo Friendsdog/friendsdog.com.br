@@ -1,39 +1,47 @@
-/**
- * friendsdog.com.br
- *
- * @see http://codeguide.co/#css
- */
-
-body {
-  @include gradient-vertical-three-colors(#f44336, #fff, 70%, #fff);
-  padding-top: 5vh;
-}
+//
+//
+//
 
 .hero {
+  @extend %grid;
+
+  margin-left: 0;
   text-align: center;
-  padding: 0px;
-}
 
-// desktop
-@media (min-width: $grid-tablet-breakpoint) {
-  body {
-    padding-top: 15vh;
+  background-color: mdl-color($palette-red-300); // fallback
+  @include gradient-vertical-three-colors(#ef5350, #fff, 40%, #fff);
+
+  @include bem-element(image) {
+    @extend %grid__item;
+
+    position: relative;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-image: url("#{$image_path}/logo@1024.png");
+
+    &::after {
+
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 
+  @include bem-element(nav) {
+      @extend %grid__item;
+  }
+}
+
+@include grid-media-query(palm) {
   .hero {
-    width: 960px;
+    @include bem-element(image) {
+      background-image: url("#{$image_path}/logo@320.png");
+    }
   }
-}
-
-// phones
-@media (max-width: $grid-tablet-breakpoint - 1) {
-  // .hero {
-  //   height: auto;
-  //   max-width: 100%;
-  //
-  //   & >figure {
-  //     margin-left: 4vh;
-  //     margin-right: 4vh;
-  //   }
-  // }
 }
