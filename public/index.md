@@ -1,4 +1,6 @@
-#.sr-only [Friend Dog](http://friendsdog.com.br)
+<h1 class="sr-only">
+  <a href="http://friendsdog.com.br" title="Site Friends Dog">Friend Dog</a>
+</h1>
 
 <div class="hero">
   <div class="hero__image"><!-- background placeholder --></div><!--

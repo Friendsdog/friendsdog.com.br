@@ -85,7 +85,6 @@ gulp.task('styles', () => {
     'public/styles/**/*.scss',
     'public/styles/**/*.css'
   ])
-    .pipe($.newer('.tmp/styles'))
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       precision: 10
