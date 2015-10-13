@@ -1,1 +1,1 @@
-  web: harp server dist -p 80
+web: harp server dist

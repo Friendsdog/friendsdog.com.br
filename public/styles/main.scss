@@ -7,11 +7,11 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/material-design-lite/src/variables";
 @import "../../node_modules/material-design-lite/src/resets/resets";
-@import "../../bower_components/csswizardry-grids/csswizardry-grids";
-@import "reset";
+@import "../../node_modules/csswizardry-grids/csswizardry-grids";
 
 //
 // Our styles
+@import "reset";
 @import "utilities";
 @import "icons";
 @import "hero";
