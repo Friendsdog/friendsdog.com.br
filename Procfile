@@ -1,1 +1,1 @@
-web: harp server dist
+web: harp server --port $PORT
