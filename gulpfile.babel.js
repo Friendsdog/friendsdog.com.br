@@ -14,7 +14,7 @@ import browserSync from 'browser-sync';
 import swPrecache from 'sw-precache';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import harp from 'harp';
-// import {output as pagespeed} from 'psi';
+import {output as pagespeed} from 'psi';
 import pkg from './package.json';
 
 const $ = gulpLoadPlugins();
@@ -143,6 +143,7 @@ gulp.task('html', () => {
 
     // Minify any HTML
     .pipe($.if('*.html', $.minifyHtml()))
+    .pipe($.if('*.html', $.w3cjs()))
 
     // Output files
     .pipe(gulp.dest('dist'))
@@ -222,15 +223,15 @@ gulp.task('default', ['clean'], cb =>
 
 
 // Run PageSpeed Insights
-// gulp.task('pagespeed', cb =>
-//   // Update the below URL to the public URL of your site
-//   pagespeed('example.com', {
-//     strategy: 'mobile'
-//     // By default we use the PageSpeed Insights free (no API key) tier.
-//     // Use a Google Developer API key if you have one: http://goo.gl/RkN0vE
-//     // key: 'YOUR_API_KEY'
-//   }, cb)
-// );
+gulp.task('pagespeed', cb =>
+  // Update the below URL to the public URL of your site
+  pagespeed('friendsdog.com.br', {
+    strategy: 'mobile'
+    // By default we use the PageSpeed Insights free (no API key) tier.
+    // Use a Google Developer API key if you have one: http://goo.gl/RkN0vE
+    // key: 'YOUR_API_KEY'
+  }, cb)
+);
 
 
 // See http://www.html5rocks.com/en/tutorials/service-worker/introduction/ for
