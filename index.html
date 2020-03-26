@@ -1,325 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="referrer" content="origin" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel=dns-prefetch href=//apis.google.com> <link rel=dns-prefetch href=//fonts.googleapis.com> <link rel=dns-prefetch href=//www.google-analytics.com>
+    <link rel="dns-prefetch" href="//apis.google.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Friends Dog &middot; O melhor cachorro quente do Brasil!</title>
-    <meta name="description" content="O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar." />
-    <meta name="robots" content="all" />
-    <meta property="og:lang" content="pt-br" />
-    <meta property="og:title" content="Friends Dog" />
-    <meta property="og:description" content="O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar." />
-    <meta property=og:image content=images/logos/default@320.png> <meta property=og:image:type content=image/png>
-    <meta property="og:image:width" content="320" />
-    <meta property="og:image:height" content="60" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <link rel="manifest" href="manifest.json" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Friends Dog" />
-    <link rel=icon sizes=192x192 href=images/touch/android-chrome-192x192.png>
-    <meta name="apple-mobile-web-app-title" content="Friends Dog" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Friends Dog" />
-    <link rel=apple-touch-icon sizes=152x152 href=images/touch/apple-touch-icon-152x152.png> <meta name=msapplication-TileImage content=images/touch/mstile-144x144.png>
-    <meta name="msapplication-TileColor" content="#f44336" />
-    <meta name="theme-color" content="#f44336" />
-    <link rel=icon type=image/png href=images/touch/favicon-32x32.png sizes=32x32> <link rel=icon type=image/png href=images/touch/favicon-16x16.png sizes=16x16>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Friends Dog">
+    <meta name="apple-mobile-web-app-title" content="Friends Dog">
+    <meta name="application-name" content="Friends Dog">
+    <meta name="description" content="O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar.">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileColor" content="#f44336">
+    <meta name="msapplication-TileImage" content="images/touch/mstile-144x144.png">
+    <meta name="referrer" content="origin">
+    <meta name="robots" content="all">
+    <meta name="theme-color" content="#f44336">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar.">
+    <meta property="og:image:height" content="60">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="320">
+    <meta property="og:image" content="images/logos/default@320.png">
+    <meta property="og:lang" content="pt-br">
+    <meta property="og:title" content="Friends Dog">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="images/touch/apple-touch-icon-152x152.png">
+    <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="images/touch/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/touch/favicon-32x32.png" sizes="32x32">
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-      @charset "UTF-8";
-      /*! https://friendsdog.com.br/ v1.0.0 */
-      ::-moz-selection {
-        background: #b3d4fc;
-        text-shadow: none;
+      .orange {
+        color: #FF4D00;
       }
-      ::selection {
-        background: #b3d4fc;
-        text-shadow: none;
+
+      .btn.btn-warning {
+        color: white;
       }
-      hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid #ccc;
-        margin: 1em 0;
-        padding: 0;
-      }
-      audio,
-      canvas,
-      iframe,
-      img,
-      svg,
-      video {
-        vertical-align: middle;
-      }
-      fieldset {
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
-      textarea {
-        resize: vertical;
-      }
-      .browserupgrade {
-        margin: 0.2em 0;
-        background: #ccc;
-        color: #000;
-        padding: 0.2em 0;
-      }
-      .hidden {
-        display: none !important;
-      }
-      .visuallyhidden {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-      }
-      .visuallyhidden.focusable:active,
-      .visuallyhidden.focusable:focus {
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        position: static;
-        width: auto;
-      }
-      body,
-      html {
-        width: 100%;
-      }
-      .invisible {
-        visibility: hidden;
-      }
-      .clearfix:after,
-      .clearfix:before {
-        content: " ";
-        display: table;
-      }
-      .clearfix:after {
-        clear: both;
-      }
-      @media print {
-        blockquote,
-        img,
-        pre,
-        tr {
-          page-break-inside: avoid;
-        }
-        *,
-        :after,
-        :before,
-        :first-letter,
-        :first-line {
-          background: 0 0 !important;
-          /* color:#000!important; */
-          box-shadow: none !important;
-          text-shadow: none !important;
-        }
-        a,
-        a:visited {
-          text-decoration: underline;
-        }
-        a[href]:after {
-          content: " (" attr(href) ")";
-        }
-        abbr[title]:after {
-          content: " (" attr(title) ")";
-        }
-        a[href^="#"]:after,
-        a[href^="javascript:"]:after {
-          content: "";
-        }
-        blockquote,
-        pre {
-          border: 1px solid #999;
-        }
-        thead {
-          display: table-header-group;
-        }
-        img {
-          max-width: 100% !important;
-        }
-        h2,
-        h3,
-        p {
-          orphans: 3;
-          widows: 3;
-        }
-        h2,
-        h3 {
-          page-break-after: avoid;
-        }
-      }
-      .hero,
-      .hero__image {
-        background-repeat: no-repeat;
-      }
-      .mdl-accordion,
-      .mdl-button,
-      .mdl-card,
-      .mdl-checkbox,
-      .mdl-dropdown-menu,
-      .mdl-icon-toggle,
-      .mdl-item,
-      .mdl-radio,
-      .mdl-slider,
-      .mdl-switch,
-      .mdl-tabs__tab,
-      a {
-        -webkit-tap-highlight-color: transparent;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      }
-      html {
-        line-height: 1.4;
-        height: 100%;
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-        color: rgba(255, 255, 255, 1);
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        font-size: 100%/1.5;
-      }
-      body {
-        min-height: 100%;
-        margin: 0;
-      }
-      main {
-        display: block;
-      }
-      [hidden] {
-        display: none !important;
-      }
-      .hero {
-        list-style: none;
-        margin: 0 0 0 -1.5rem;
-        padding: 0;
-      }
-      .hero__image,
-      .hero__nav {
-        display: inline-block;
-        padding-left: 1.5rem;
-        vertical-align: top;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      img {
-        height: auto;
-        max-width: 100%;
-      }
-      a {
-        text-decoration: none;
-        color: unset;
-      }
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-      }
-      .sr-only-focusable:active,
-      .sr-only-focusable:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        clip: auto;
-      }
-      .text-hide {
-        font: "0/0" a;
-        color: transparent;
-        text-shadow: none;
-        background-color: transparent;
-        border: 0;
-      }
-      .icon {
-        height: 10vmin;
-        width: 10vmin;
-        margin: 1vh 1vh 2vh;
-        border-radius: 2vmin;
-      }
-      .icon--facebook {
-        background-color: #3b5997;
-        fill: #fff;
-      }
-      .icon--facebook--inverse {
-        background-color: transparent;
-        fill: #3b5997;
-      }
-      .icon--friendsdog {
-        background-color: #f44336;
-        fill: #fff;
-      }
-      .icon--friendsdog--inverse {
-        background-color: transparent;
-        fill: #f44336;
-      }
-      .icon--google {
-        background-color: #d64937;
-        fill: #fff;
-      }
-      .icon--google--inverse {
-        background-color: transparent;
-        fill: #d64937;
-      }
-      .icon--instagram {
-        background-color: #ddc4ae;
-        fill: #fff;
-      }
-      .icon--instagram--inverse {
-        background-color: transparent;
-        fill: #ddc4ae;
-      }
-      .icon--location {
-        background-color: #f7544c;
-        fill: #fff;
-      }
-      .icon--location--inverse {
-        background-color: transparent;
-        fill: #f7544c;
-      }
-      .icon--twitter {
-        background-color: #41b7d8;
-        fill: #fff;
-      }
-      .icon--twitter--inverse {
-        background-color: transparent;
-        fill: #41b7d8;
-      }
-      .icon--whats-app {
-        background-color: #28b43f;
-        fill: #fff;
-      }
-      .icon--whats-app--inverse {
-        background-color: transparent;
-        fill: #28b43f;
-      }
-      .hero {
-        margin-left: 0;
-        text-align: center;
-        background-color: darkgoldenrod;
-        /* background-image:linear-gradient(#ef5350,#fff 40%,#fff); */
-        background-image: url(images/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top left;
-        height: 100vh;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEF5350', endColorstr='#FFFFFFFF', GradientType=0);
-      }
-      .hero__image {
+
+      .logo {
         position: relative;
         background-attachment: scroll;
         background-position: center center;
@@ -327,20 +58,41 @@
         height: 60vh;
         background-image: url(/images/logo@1024.png);
       }
-      .hero__image::after {
-        bottom: 0;
-        content: "";
-        left: 0;
+
+      .hero {
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        margin: 0;
+        background-color: darkgoldenrod;
+        background-image: linear-gradient(#ef5350,#fff 40%,#fff);
+        background-image: url(images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);     }
+
+      .hero .col-sm-4 {
         position: absolute;
         right: 0;
-        top: 0;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60vh;
+        background-image: url(/images/logo@1024.png);
       }
-      .hero__footer {
-        text-shadow: 1px 1px 2px black;
-      }
+
+      .jumbotron {
+      background-color: none;}
+
       @media only screen and (max-width: 480px) {
-        .hero__image {
-          background-image: url(/images/logo@480.png);
+        .hero {
+          background-position: top right;
+          height: 100vh;
+        }
+
+        .hero .col-sm-4 {
+          background: none;
         }
       }
     </style>
@@ -348,45 +100,59 @@
 
   <body>
     <main>
-      <h1 class="sr-only">
-        <a href="https://friendsdog.com.br/" title="FriendsDog">Friend Dog</a>
-      </h1>
-      <div class="hero">
-        <div class="hero__image"></div>
-        <nav class="hero__nav">
-          <a href="https://fb.com/friendsdogdf" title="Friends Dog no Facebook!">
-            <svg class="icon icon--facebook--inverse" viewbox="0 0 24 24">
-              <path d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path>
-            </svg>
-          </a>
-          <a href="https://twitter.com/friendsdogdf">
-            <svg class="icon icon--twitter--inverse" viewbox="0 0 24 24">
-              <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path>
-            </svg>
-          </a>
-          <a href="https://instagram.com/friendsdogdf">
-            <svg class="icon icon--instagram" viewbox="0 0 24 24">
-              <path d="M20,6.5A0.5,0.5 0 0,1 19.5,7H17.5A0.5,0.5 0 0,1 17,6.5V4.5A0.5,0.5 0 0,1 17.5,4H19.5A0.5,0.5 0 0,1 20,4.5M4.5,20A0.5,0.5 0 0,1 4,19.5V11H6.09C6.03,11.32 6,11.66 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12C18,11.66 17.96,11.32 17.91,11H20V19.5A0.5,0.5 0 0,1 19.5,20M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path>
-            </svg>
-          </a>
-          <a href="https://goo.gl/maps/v3kFmaTAsaS2" title="Como chegar" target="_blank">
-            <svg class="icon icon--location" viewbox="0 0 24 24">
-              <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"></path>
-            </svg>
-          </a>
-        </nav>
-        <footer class="hero__footer">
-          <h2><a href="tel:061983303458">061 9 8330-3458</a><br><a href="tel:061983330268">061 9 8333-0268</h2>
-        </footer>
+      <div class="jumbotron hero" style="border-radius: 0">
+        <div class="container">
+          <div class="col-sm-4">
+          </div>
+          <div class="col-sm-8">
+            <h1 class="display-3 orange">Friend do Friends Dog!</h1>
+            <p class="h3">
+              Precisamos de nossos clientes e fãs para superarmos o
+              desafio do Covid-19:
+              <span class="h1">
+                São 13 famílias que dependem do nosso negócio!
+              </span>
+            </p>
+            <p>
+              <a class="btn btn-warning btn-lg" href="#friends" role="button">Vamos lá! &raquo;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron" id="friends">
+        <div class="container h3">
+          <p>
+            Então, assim como várias pequenas e médias empresas locais,
+            o isolamento social fez nossas receitas despencarem e nosso
+            caixa sumir! E precisamos recuperar, manter 13 famílias em condições
+            mínimas de segurança e manter nosso funcionamento!
+          </p>
+
+          <p class="orange">
+            <span class="h3">Estamos precisando de nossos clientes e fãs!</span>
+            <span class="h3">Como?</span>
+            Basta você adquirir um voucher antecipado por
+            10 parcelas de R$ 17,00 (dezessete reais) e garantir um kit fidelidade
+            lanche hot dog + refri ou suco :)
+          </p>
+        </div>
+      </div>
+
+      <div class="alert alert-warning">
+        <div class="col-sm-6 offset-md-3">
+          <h3 class="orange">Hey Friends!</h3>
+          Para dar certo, as retiradas iniciarão no local
+          físico após o término do isolamento social!
+        </div>
       </div>
     </main>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" />
+    <script async src="//www.google-analytics.com/analytics.js"></script>
     <script>
-      (function(i, s, o, g, r, a, m) {
+      (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -398,9 +164,35 @@
       ga("create", "UA-68439562-1", "auto");
       ga("send", "pageview");
     </script>
-    <script async defer src="https://apis.google.com/js/platform.js?publisherid=103656790506427243788"></script>
-    <script type=application/ld+json>
-      { "@context": "http://schema.org", "@type": "FastFoodRestaurant", "logo": "https://friendsdog.com.br/images/default@1024.png", "description": "O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar.", "url" : "https://friendsdog.com.br/", "address": { "@type": "PostalAddress", "addressLocality": "Brasilia, Brasil", "addressRegion": "DF", "streetAddress": "Blvd. Sul - Águas Claras" }, "location" : { "@type": "Place", "geo": { "@type": "GeoCoordinates", "latitude": "-15.839383", "longitude": "-48.022472" } }, "priceRange": "$", "email": "friendsdog(at)gmx.com", "name": "Friends Dog", "telephone": "061 9 8330-3458", "openingHours": [ "Su-Sa 18:00-00:30" ] }
+    <script async src="https://apis.google.com/js/platform.js?publisherid=103656790506427243788"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>
+      const x = {
+        "@context": "https://schema.org",
+        "@type": "FastFoodRestaurant",
+        "logo": "https://friendsdog.com.br/images/default@1024.png",
+        "description": "O Friends Dog oferece deliciosos cachorros quentes aguçando o paladar dos Clientes com diversos molhos, de alta qualidade, satisfazendo não somente o paladar, mas um clima agradável e atendimento exemplar.",
+        "url": "https://friendsdog.com.br/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brasilia, Brasil",
+          "addressRegion": "DF",
+          "streetAddress": "Blvd. Sul - Águas Claras",
+        },
+        "location": {
+          "@type": "Place",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-15.839383",
+            "longitude": "-48.022472",
+          },
+        },
+        "priceRange": "$",
+        "email": "friendsdog(at)gmx.com",
+        "name": "Friends Dog",
+        "telephone": "061 9 8330-3458",
+        "openingHours": ["Su-Sa 18:00-00:30"],
+      };
     </script>
   </body>
 </html>
